@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+     <!--包含公用头信息-->
+    <include layout="@layout/title_view" />
+    <!--带箭头标记的展开收起的列表 ExpandableListView是一个垂直滚动显示两级列表项的视图，与ListView不同的是，它可以有两层：每一层都能够被独立的展开并显示其子项-->
+    <ExpandableListView
+        android:id="@+id/expandableListView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:groupIndicator="@drawable/tag_but_background"
+        android:listSelector="@drawable/list_seletor_transparent"
+        android:scrollbars="none" >
+    </ExpandableListView>
+     <!--android:groupIndicator 在组列表项旁边显示的指示符。注：可以是一个图片。-->
+     <!--android:listSelector 设置的是对listview操作的时候各种背景样式。-->
+</LinearLayout>

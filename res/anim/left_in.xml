@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 动画 主要为了展示界面view之间的切换效果？
+alpha        渐变透明度动画效果
+scale        渐变尺寸伸缩动画效果
+translate  画面转换位置移动动画效果
+rotate      画面转移旋转动画效果
+-->
+<set android:shareInterpolator="false"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<translate android:fromXDelta="100%"
+		android:toXDelta="0"
+		android:duration="200"/>
+</set>
+<!--fromXDelta
+toXDelta	为动画、结束起始时 X坐标上的位置
+fromYDelta
+toYDelta	为动画、结束-->

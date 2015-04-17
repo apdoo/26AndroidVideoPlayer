@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!--在android skd源码中的 /frameworks/base/core/res/res/values/attrs.xml，这个attrs.xml定义了所有android系统组件的属性。
+      当我们自定义组件时，除了可以使用android系统为我们提供好的属性之外，还可以自定义属性
+      自定义属性主要步骤如下：
+      一、在attrs.xml文件中声明属性 见下面
+      二、在布局文件中使用：在使用之前必须声名命名空间 见:header_view.xml中的  xmlns:app="http://schemas.android.com/apk/res/com.dream.myqiyi"
+      三、在java代码中对属性进行解析 如：TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.MyToggleBtn);// 由attrs 获得 TypeArray
+      -->
+    <declare-styleable name="FlowIndicator">      <!--声名属性集的名称，即这些属性是属于哪个控件的。-->
+        <attr name="count" format="integer" />
+        <attr name="space" format="dimension" /><!--dimension 尺寸值-->
+        <attr name="point_size" format="dimension" />
+        <attr name="point_seleted_color" format="color|reference" /> <!--reference 引用 color 颜色-->
+        <attr name="point_normal_color" format="color|reference" />
+        <attr name="point_radius" format="dimension" />
+    </declare-styleable>
+
+</resources>
