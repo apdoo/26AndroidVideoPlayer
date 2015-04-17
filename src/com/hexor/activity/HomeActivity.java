@@ -41,6 +41,7 @@ public class HomeActivity extends Activity {
 		prepareView(); //初始化视图
 		mTimer = new Timer();
 		mTimer.scheduleAtFixedRate(new MyTask(), 0, 5000);
+
 	}
 
 	/**
